@@ -1,0 +1,140 @@
+```html name=index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio website template">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --primary: #171a21;
+      --accent: #0070f3;
+      --card: #fff;
+      --shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+    }
+    header {
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 110px; height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      box-shadow: var(--shadow);
+      margin-bottom: 0.5rem;
+    }
+    h1 { margin: 0.5rem 0 0 0; font-size: 2.3rem; }
+    h2 { color: var(--accent); margin: 0.2rem 0 1rem 0; font-size: 1.2rem; font-weight: 400;}
+    nav a {
+      margin: 0 0.7rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    section { background: var(--card); border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 2rem; padding: 2rem; }
+    section h3 { margin-top: 0; color: var(--accent); font-weight: 700;}
+    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .project-card {
+      background: #f3f4f6;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform 0.15s;
+      border-left: 4px solid var(--accent);
+    }
+    .project-card:hover { transform: translateY(-4px) scale(1.01);}
+    .project-card h4 { margin: 0; }
+    .project-card p { margin: 0.5rem 0 0 0; font-size: 0.95rem;}
+    .project-card a { color: var(--accent); text-decoration: none; font-weight: 500;}
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1rem;}
+    .skill { background: #e5e7eb; color: #333; border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.98rem;}
+    .contact-list { margin-top: 1rem;}
+    .contact-list a { display: inline-block; margin-right: 1.2rem; color: var(--accent); text-decoration: none; font-weight: 500;}
+    @media (max-width: 700px) {
+      .projects { grid-template-columns: 1fr; }
+      section { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Your photo">
+    <h1>Your Name</h1>
+    <h2>Web Developer & Designer</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        Hi! I'm <strong>Your Name</strong>, a passionate web developer who loves building interactive, accessible, and performant web applications. I enjoy learning new technologies and turning creative ideas into real-world products.
+      </p>
+    </section>
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project-card">
+          <h4>Awesome Portfolio</h4>
+          <p>A modern, customizable portfolio template for developers. Built with HTML, CSS, and JavaScript.</p>
+          <a href="https://github.com/yourusername/awesome-portfolio" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h4>Blogify</h4>
+          <p>Minimalist blogging platform supporting Markdown and live preview. Made for simplicity and speed.</p>
+          <a href="https://github.com/yourusername/blogify" target="_blank">View on GitHub</a>
+        </div>
+        <!-- Add more projects here -->
+      </div>
+    </section>
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="skills-list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Figma</div>
+        <!-- Add more skills as needed -->
+      </div>
+    </section>
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="contact-list">
+        <a href="mailto:youremail@example.com">Email</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <!-- Add more links as needed -->
+      </div>
+    </section>
+  </main>
+  <footer style="text-align:center;color:#aaa;padding:1.2rem 0 2rem 0;">
+    &copy; <span id="year"></span> Your Name. Powered by GitHub Pages.
+  </footer>
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
