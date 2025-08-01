@@ -35,7 +35,6 @@
     body {
       min-height: 100vh;
     }
-    /* NAVBAR */
     .navbar {
       background: var(--nav-bg);
       padding: 0.8rem 2rem;
@@ -73,6 +72,7 @@
       letter-spacing: 1.2px;
       transition: var(--transition);
       border-radius: 6px;
+      cursor: pointer;
     }
     .nav-links a:hover,
     .nav-links a.active {
@@ -89,7 +89,6 @@
       box-shadow: 0 2px 8px #339aff77;
       transition: var(--transition);
     }
-    /* HERO */
     .hero-section {
       padding: var(--section-gap) 0 2.5rem 0;
       display: flex;
@@ -165,8 +164,6 @@
       color: #fff;
       transform: scale(1.08) translateY(-2px);
     }
-
-    /* SECTIONS */
     section {
       max-width: 1100px;
       margin: var(--section-gap) auto 0 auto;
@@ -184,7 +181,6 @@
       font-size: 2rem;
       text-transform: uppercase;
     }
-    /* PROJECTS */
     .projects-list {
       display: flex;
       flex-wrap: wrap;
@@ -235,7 +231,6 @@
       color: #fff;
       text-shadow: 0 2px 8px #339aff77;
     }
-    /* SKILLS */
     .skills-list {
       display: flex;
       flex-wrap: wrap;
@@ -271,7 +266,89 @@
       color: #fff;
       border-color: #339aff;
     }
-    /* CONTACT */
+    #resume {
+      background: #23272b;
+      border-radius: var(--rounded);
+      margin: var(--section-gap) auto 0 auto;
+      max-width: 1100px;
+      padding: 2.5rem 3.2rem;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.30);
+    }
+    #resume h2 {
+      color: #339aff;
+      margin-top: 0;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 1.4rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    .resume-content h3 {
+      margin-bottom: 0.6rem;
+      color: #fff;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+    .resume-content h4 {
+      color: #339aff;
+      font-size: 1.13rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .resume-content ul {
+      margin: 0 0 0.7rem 1.2rem;
+      padding: 0;
+      color: #b0b3bb;
+      font-size: 1rem;
+    }
+    .resume-content li {
+      margin-bottom: 0.3rem;
+    }
+    .resume-content a {
+      color: #339aff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.16s;
+    }
+    .resume-content a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .resume-content p {
+      margin: 0.2rem 0 0.8rem 0;
+      font-size: 1.04rem;
+      color: #e9eaf0;
+    }
+    .resume-download {
+      margin: 1.8rem 0 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .resume-download a {
+      background: #339aff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.75rem 2.1rem;
+      border-radius: 9px;
+      font-size: 1.13rem;
+      letter-spacing: 0.13em;
+      transition: background 0.17s, color 0.17s;
+      box-shadow: 0 2px 12px #339aff30;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .resume-download a:hover {
+      background: #1877f2;
+      color: #fff;
+      text-decoration: none;
+    }
+    .resume-download i {
+      font-size: 1.19rem;
+    }
     #contact {
       background: #222326;
       border-radius: var(--rounded);
@@ -457,6 +534,7 @@
       <a href="#about" class="nav-item active">About</a>
       <a href="#projects" class="nav-item">Projects</a>
       <a href="#skills" class="nav-item">Skills</a>
+      <a href="#resume" class="nav-item">Resume</a>
       <a href="#contact" class="nav-item">Contact</a>
     </div>
   </nav>
@@ -560,6 +638,47 @@
       </div>
     </section>
 
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="resume-download">
+        <a href="CV_KimtribiCuevas.pdf" target="_blank" download>
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+        </a>
+      </div>
+      <div class="resume-content">
+        <h3>Kimtribi Cuevas</h3>
+        <p><strong>Email:</strong> kimtribi24@gmail.com | <strong>Phone:</strong> 0967 243 7108</p>
+        <p><strong>Location:</strong> Taguig, Philippines</p>
+        <hr style="border-color:#339aff; margin: 1.2rem 0;">
+        <h4>Education</h4>
+        <ul>
+          <li><strong>Bachelor of Science in Computer Science</strong> - [Your University], [Year]</li>
+        </ul>
+        <h4>Experience</h4>
+        <ul>
+          <li>
+            <strong>Intern, Software Developer</strong> — [Company], [Year]<br>
+            <span>Worked on developing web applications and contributed to collaborative projects using modern frameworks.</span>
+          </li>
+        </ul>
+        <h4>Skills</h4>
+        <ul>
+          <li>Python, Java, C#, C++, HTML, CSS, JavaScript, React, Git, GitHub, MongoDB, Bootstrap, Unity, Flutter</li>
+        </ul>
+        <h4>Projects</h4>
+        <ul>
+          <li><strong>Tagalog Tots</strong> — Educational mobile game for Tagalog vocabulary.</li>
+          <li><strong>VGMech</strong> — Web application for learning game mechanics.</li>
+          <li><strong>Majayjay Website</strong> — Prototype web app for Majayjay, Laguna.</li>
+        </ul>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://github.com/Lancer22" target="_blank">GitHub: Lancer22</a></li>
+          <li><a href="https://www.linkedin.com/in/kimtribi-cuevas" target="_blank">LinkedIn: kimtribi-cuevas</a></li>
+        </ul>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="contact-container">
         <div class="contact-info">
@@ -612,14 +731,13 @@
     </section>
   </main>
   <script>
-    // Navbar scroll highlight and click highlight
+    // Navbar scroll highlight and click highlight including Resume link
     document.addEventListener('DOMContentLoaded', function () {
       const navLinks = document.querySelectorAll('.nav-item');
       const sectionIds = Array.from(navLinks).map(link => link.getAttribute('href'));
       const sections = sectionIds.map(id => document.querySelector(id));
       let isScrolling = false;
 
-      // Smooth scroll on click, highlight clicked link
       navLinks.forEach((link, idx) => {
         link.addEventListener('click', function (e) {
           const targetId = this.getAttribute('href');
@@ -638,7 +756,6 @@
         });
       });
 
-      // Highlight nav on scroll, only if not scrolling via click
       function onScrollHighlight() {
         if (isScrolling) return;
         const scrollPos = window.scrollY + 110;
@@ -661,7 +778,7 @@
       onScrollHighlight();
     });
 
-    // Contact Form Validation & Submission (using mailto as backendless fallback)
+    // Contact Form Validation & Submission (mailto fallback)
     const contactForm = document.getElementById('contactForm');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
